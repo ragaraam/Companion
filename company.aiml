@@ -1,0 +1,143 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+    <pattern>* COMPANY</pattern>
+    <template>
+          and price range?<think><set name="company"><star/></set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>COMPANY *</pattern>
+    <template>
+    	and price range? <think><set name="company"><star index="1"/></set> </think>
+    </template>
+    </category>
+
+    <category>
+    <pattern>*APPLE*</pattern>
+    <template>
+    	and price range? <think><set name="company">apple</set> </think>
+    </template>
+    </category>
+
+    <category>
+    <pattern>*APPLE</pattern>
+    <template>
+    	and price range? <think><set name="company">apple</set> </think>
+    </template>
+    </category>  
+    
+    <category>
+    <pattern>APPLE*</pattern>
+    <template>
+    	and price range? <think><set name="company">apple</set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>APPLE</pattern>
+    <template>
+    	and price range? <think><set name="company">apple</set> </think>
+    </template>
+    </category>
+
+    <category>
+    <pattern>SAMSUNG</pattern>
+    <template>
+    	and price range? <think><set name="company">samsung</set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>ASUS</pattern>
+    <template>
+    	and price range? <think><set name="company">asus</set> </think>
+    </template>
+    </category>
+
+    <category>
+    <pattern>SONY</pattern>
+    <template>
+    	and price range? <think><set name="company">sony</set> </think>
+    </template>
+    </category>
+    <category>
+
+    <pattern>LENOVO</pattern>
+    <template>
+    	and price range? <think><set name="company">lenovo</set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>CANON</pattern>
+    <template>
+    	and price range? <think><set name="company">canon</set> </think>
+    </template>
+    </category>
+
+    <category>
+    <pattern>NIKON</pattern>
+    <template>
+    	and price range? <think><set name="company">nikon</set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>PHILLIPS</pattern>
+    <template>
+    	and price range? <think><set name="company">phillips</set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>ACER</pattern>
+    <template>
+    	and price range? <think><set name="company">acer</set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>MOTO</pattern>
+    <template>
+    	and price range? <think><set name="company">moto</set> </think>
+    </template>
+    </category>
+  
+    <category>
+    <pattern>DELL</pattern>
+    <template>
+    	and price range? <think><set name="company">dell</set> </think>
+    </template>
+    </category>
+
+    <category>
+    <pattern>HP</pattern>
+    <template>
+    	and price range? <think><set name="company">hp</set> </think>
+    </template>
+    </category>
+ 
+    <category>
+    <pattern>PANASONIC</pattern>
+    <template>
+    	and price range? <think><set name="company">panasonic</set> </think>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>*</pattern>
+    <template> 
+    <random>
+            <li>Be more specific.</li>
+            <li>I did not know that.</li>
+            <li>I don't know what that means.</li>
+            <li>Try to tell me that another way.</li>
+            <li>Are you talking about an animal, vegetable or mineral?</li>
+            <li>What is it?</li>
+    </random>
+    </template>
+    </category>
+</aiml>
